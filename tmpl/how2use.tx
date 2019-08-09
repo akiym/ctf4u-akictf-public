@@ -1,0 +1,64 @@
+: cascade "include/layout.tx"
+
+: override content -> {
+
+<div class="doc">
+    <h1>このサイトの使い方</h1>
+    <p>
+        このサイトは、bata_24氏が公開している<a href="http://pastebin.com/uyifxgPu">pwn challenges list</a>(通称bataリスト)にしたがって、CTFの過去問の管理することを目的としています。<br />
+        解法が正しいことを検証する方法がないため、解けたかどうかは各自の判断にお任せします。基本的にshellを奪えた、もしくは特定のファイルが読めるようになれば解けたといって良いと思います。<br />
+        全部で181問(2016/12/04現在)あります。全完目指して頑張りましょう。
+    </p>
+
+    <p>
+        右上の「Twitterでログイン」をクリックすることでログインできます。ログインすると問題管理ができるようになります。<br />
+        (このサイトはakictfの一部サービスとして動作しています)
+    </p>
+
+    <p><img src="<: uri_for('/static/img/check.gif') :>" /></p>
+
+    <p>このサイトは<a href="https://twitter.com/akiym">@akiym</a>によって管理されています。意見や要望等ありましたら気軽にどうぞ。</p>
+
+    <h2>FAQ</h2>
+    <h3>新たに問題を追加することはできますか</h3>
+    <p>いいえ、できません。ただし、pwn challenges listに変更があった際には問題リストをアップデートする予定です。<br />(ユーザ側で作成した問題リストを公開できるようにするかもしれません)</p>
+    <h3>writeupを共有したいのですが</h3>
+    <p>あとで実装します :)</p>
+    <h3>問題のバイナリが見つかりません</h3>
+    <p><s>以下の問題のバイナリについては、外部リンクが見つかりませんでした。該当するバイナリをお持ちの方、提供していただけると助かります。</s></p>
+    <ul>
+        <li><s>fss_montgomery (Boston Key Party CTF 2013)</s></li>
+        <li><s>fss_miami (Boston Key Party CTF 2013)</s></li>
+        <li><s>fss_bridgeport (Boston Key Party CTF 2013)</s></li>
+        <li><s>secure_mm (Trend Micro CTF Asia Pacific &amp; Japan 2015 Online Qualifier)</s></li>
+        <li><s>e1000 (PlaidCTF 2013)</s></li>
+        <li><s>Web servr (PlaidCTF 2013)</s></li>
+    </ul>
+    <h2>更新履歴</h2>
+    <p>[2016/12/04]</p>
+    <ul>
+        <li>問題一覧を更新しました
+            <ul>
+                <li>ShellingFolder (HITCON CTF 2016 Quals)</li>
+                <li>Babyheap (HITCON CTF 2016 Quals)</li>
+                <li>Secret Holder (HITCON CTF 2016 Quals)</li>
+                <li>Sleepy Holder (HITCON CTF 2016 Quals)</li>
+                <li>OmegaGo (HITCON CTF 2016 Quals)</li>
+                <li>Heart Attack (HITCON CTF 2016 Quals)</li>
+                <li>House of Orange (HITCON CTF 2016 Quals)</li>
+            </ul>
+        </li>
+        <li>難易度の変更をしました
+            <ul>
+                <li>pwn300 (EBCTF 2013) <span class="label medium-easy">medium easy</span> → <span class="label easy">easy</span></li>
+            </ul>
+        </li>
+        <li>紛失していた問題のバイナリを追加しました</li>
+    </ul>
+    <p>[2016/12/01]</p>
+    <ul>
+        <li>ページを公開しました</li>
+    </ul>
+</div>
+
+: }

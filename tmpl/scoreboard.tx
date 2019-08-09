@@ -1,0 +1,36 @@
+: cascade "include/layout.tx"
+
+: override content -> {
+
+<table id="scoreboard" class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="numbered">#</th>
+            <th>Player</th>
+            <th class="score">Score</th>
+            <th class="numbered">Solves #</th>
+            <th class="numbered">baby</th>
+            <th class="numbered">easy</th>
+            <th class="numbered">medium easy</th>
+            <th class="numbered">medium medium</th>
+            <th class="numbered">medium hard</th>
+            <th class="numbered">hard</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="numbered">1</td>
+            <td><a href="<: uri_for('/player/' ~ 'akiym') :>">akiym</a></td>
+            <td class="score">30</td>
+            <td class="numbered">2</td>
+            <td class="numbered">1</td>
+            <td class="numbered">1</td>
+            <td class="numbered">0</td>
+            <td class="numbered">0</td>
+            <td class="numbered">0</td>
+            <td class="numbered">0</td>
+        </tr>
+    </tbody>
+</table>
+
+: }

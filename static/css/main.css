@@ -1,0 +1,311 @@
+.navbar-brand {
+    height: 50px;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.navbar-collapse {
+    margin-top: 15px;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    border-bottom: 5px solid #3498db;
+}
+
+.navbar-default {
+    border-top: 2px solid #3498db;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #1a242f;
+    background: #fff;
+    border-bottom: 5px solid #3498db;
+    padding: 5px 10px;
+}
+
+.nav-tabs {
+}
+
+
+.tab-content {
+    padding-top: 20px;
+    border: 1px solid #dddddd;
+    border-top: 0;
+}
+.tab-content #source-code pre {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.problem .panel h1 {
+    margin: 0;
+}
+.problem .panel .panel-footer {
+    color: #b94a48;
+}
+.problem h2 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+table {
+    font-size: 85%;
+}
+table .progress {
+    margin: 0;
+}
+
+.glyphicon-remove {
+    color: #bc271c;
+}
+.glyphicon-ok {
+    color: #38b44a;
+}
+.glyphicon-pushpin {
+    color: #158cba;
+}
+.glyphicon-repeat {
+    color: #158cba;
+}
+.glyphicon-floppy-remove {
+    color: #3e648d;
+}
+.glyphicon-time {
+    color: #ff9c21;
+}
+.glyphicon-hourglass {
+    color: #ff9c21;
+}
+.glyphicon-flash {
+    color: #ff9c21;
+}
+.glyphicon-exclamation-sign {
+    color: #3e648d;
+}
+.glyphicon-text-color {
+    color: #3e648d;
+}
+.glyphicon-heart {
+    color: #f17a77;
+}
+
+.tablesorter th.headerSortUp, .tablesorter th.headerSortDown {
+    border-bottom: 2px solid #3498db;
+}
+.tablesorter .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#statusTable {
+}
+#statusTable .id {
+    width: 30px;
+    text-align: center;
+}
+#statusTable .time {
+    width: 100px;
+    text-align: right;
+}
+#statusTable .memory {
+    width: 100px;
+    text-align: right;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 4px;
+}
+
+#challenge th {
+    background: #b32d00;
+    color: #fff;
+}
+
+#challenge .checked {
+    background: #dff0d8;
+}
+#challenge .check {
+    width: 25px;
+    padding: 4px;
+    text-align: center;
+}
+#challenge .check i {
+    color: #eee;
+}
+#challenge .check:hover i {
+    color: #47a447;
+}
+#challenge .checked .check i {
+    color: #47a447;
+}
+#challenge .difficulty {
+    width: 120px;
+    text-align: center;
+}
+#challenge .genre {
+    width: 60px;
+}
+#challenge .chall {
+    width: 250px;
+}
+#challenge .tag-label {
+    padding: 2px 4px;
+}
+#challenge .source {
+    width: 300px;
+}
+#challenge .source i {
+    margin-right: 5px;
+}
+#challenge .solves {
+    min-width: 70px;
+    width: 70px;
+    text-align: right;
+}
+#challenge .rival {
+    min-width: 100px;
+}
+#challenge .rival-ico {
+    padding: 0;
+}
+#challenge .writeup {
+    width: 45px;
+    text-align: right;
+}
+#challenge .writeup i {
+    margin-left: 5px;
+    color: #ddd;
+}
+#challenge .writeup:hover i {
+    color: #446e9b;
+}
+
+#scoreboard .numbered {
+    width: 70px;
+    text-align: center;
+}
+#scoreboard .score {
+    width: 70px;
+    text-align: right;
+}
+
+#challenge-status .rank {
+    width: 30px;
+    text-align: right;
+}
+#challenge-status .solves {
+    width: 60px;
+    text-align: right;
+}
+#challenge-status .difficulty {
+    color: #333;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+#challenge-status .rival-ico {
+    padding: 0;
+    width: 24px;
+}
+
+#query-form {
+    margin-bottom: 20px;
+}
+#query-form .control-label {
+    font-size: 12px;
+    padding-top: 9px;
+    padding-right: 0;
+}
+#query-form .checkbox {
+    padding-top: 7px;
+}
+#query-form .column .Select {
+    display: inline-block;
+    width: 50%;
+}
+#query-form .form-group {
+    margin-bottom: 0;
+    min-height: 45px;
+}
+#query-form .rival-name {
+    float: left;
+}
+#query-form .chall-bar {
+    float: right;
+}
+#query-form .chall-bar-color {
+    float: left;
+    height: 12px;
+    margin-top: 4px;
+}
+#query-form .solves {
+    float: right;
+    width: 30px;
+    text-align: right;
+}
+
+.baby, .easy, .medium-easy, .medium-medium, .medium-hard, .hard {
+    color: #333;
+    font-weight: bold;
+}
+.baby {
+    background: #bbbbbb;
+}
+.easy {
+    background: #89ff89;
+}
+.medium-easy {
+    background: #8383ff;
+}
+.medium-medium {
+    background: #fefe55;
+}
+.medium-hard {
+    background: #ff9955;
+}
+.hard {
+    background: #ff6464;
+}
+.difficulty-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer {
+    background: #f2f2f2;
+    color: #aaa;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding-top: 10px;
+}
+.footer .copyright {
+    font-size: 80%;
+    text-align: right;
+}
+
+.feedback-form {
+    width: 300px;
+    margin: 10px;
+}
+
+.doc {
+    margin-bottom: 20px;
+}
+.doc h1 {
+    font-size: 30px;
+}
+.doc h2 {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
+}
+.doc h3 {
+    padding-left: 10px;
+    font-size: 18px;
+    border-left: 5px solid #2d2d2d;
+}

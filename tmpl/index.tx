@@ -1,0 +1,8 @@
+: cascade "include/layout.tx"
+
+: override content -> {
+
+<div id="challs"></div>
+<script src="<: static_file('/static/js/bundle.min.js') :>"></script>
+
+: }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title><: $title || 'ctf4u' :></title>
+    <link href="<: uri_for('/static/bootstrap/css/bootstrap.min.css') :>" rel="stylesheet" type="text/css" />
+    <link href="<: uri_for('/static/css/font-awesome.min.css') :>" rel="stylesheet" type="text/css" />
+    <link href="<: static_file('/static/css/react-select.css') :>" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<: static_file('/static/css/main.css') :>" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="<: uri_for('/') :>"><i class="fa fa-flag" aria-hidden="true"></i> ctf4u</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li<: if c().req.path_info == '/' { :> class="active"<: } :>><a href="<: uri_for('/') :>">問題リスト</a></li>
+                    <li<: if c().req.path_info == '/how2use' { :> class="active"<: } :>><a href="<: uri_for('/how2use') :>">このサイトの使い方</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    : if $USER {
+                    : } else {
+                    <li><a href="/auth/twitter/authenticate?service=ctf4u"><i class="fa fa-twitter" aria-hidden="true"></i> Twitterでログイン</a></li>
+                    : }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<: block content -> { } -:>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="col-sm-6">
+                <b>Special Thanks</b>
+                <ul>
+                    <li><a href="http://pastebin.com/uyifxgPu">pwn challenges list</a> by bata_24</li>
+                    <li><a href="http://aoj-icpc.ichyo.jp/">AOJ-ICPC</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <b>リンク集</b>
+                <ul>
+                    <li><a href="https://ctftime.org/">CTFtime.org</a></li>
+                    <li><a href="https://github.com/ctfs">github.com/ctfs</a></li>
+                    <li><a href="http://shell-storm.org/repo/CTF/">shell-storm.org/repo/CTF/</a></li>
+                    <li><a href="http://nanuyokakinu.hatenablog.jp/entry/2015/08/24/213158">常設CTFまとめ</a> by N4NU</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2016 akiym</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

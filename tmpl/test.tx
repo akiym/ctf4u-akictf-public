@@ -1,0 +1,10 @@
+: cascade "include/layout.tx"
+
+: override content -> {
+
+<div id="challs">
+</div>
+
+<script src="<: uri_for('/js/bundle.js') :>"></script>
+
+: }
